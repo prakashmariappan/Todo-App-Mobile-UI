@@ -1,0 +1,205 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.max-width{
+    margin: 50px 250px;
+}
+/*home styling starts*/
+
+.head-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-box h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+.title-box h1 span{
+    font-weight: 100;
+    color: grey;
+}
+.add-list-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+i{
+    font-size: 40px;
+    color:#e74c3c;
+}
+.add-list-box h3{
+    color: grey;
+    text-indent: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+/*cards*/
+.card-cointainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card{
+    margin-bottom: 60px;
+    width: 240px;
+    height: 330px;
+    padding: 15px 0px;
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px darkgrey;
+}
+.card-heading{
+    font-size: 25px;
+    color: #e74c3c;
+    font-weight: 400;
+    margin-left: 35px;
+    padding: 10px 0px;
+    border-bottom: 2px solid darkgrey;
+}
+.completed-task{
+    margin-top: 30px;
+    margin-left: 35px;
+    color: red;
+    font-size: 27px;
+    font-weight: 100px;
+    text-decoration: solid line-through red 3px;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left:10px ;
+    
+}
+.check input{
+    width: 20px;
+    height: 20px;
+}
+.check label{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.mainframe{
+    filter: blur(8px);
+}
+/*popup*/
+.popup{
+    background-color: white;
+    position:absolute;
+    top: 30%;
+    left: 35%;
+    border: 1px solid #e74c3c;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px darkgrey;
+    padding: 10px 10px;
+    text-align: center;
+    width: 400px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pu{
+    margin:15px 0px;
+}
+.popup-heading{
+    color: #e74c3c;
+    font-size: 25px;
+    font-weight: 400;
+}
+.popup-input{
+  box-sizing: border-box;
+  width:300px;
+  height: 35px;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px lightgray;
+}
+
+.popup-button button{
+    border: none;
+    padding: 5px 15px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    font-weight: normal;
+    width: 100px;
+}
+.popup-button button a{
+ color: white;
+}
+
+@media screen  and (max-width: 480px) {
+    /*home styling starts*/
+    .max-width{
+        margin: 25px 10px ;
+    }
+    .title-box h1{
+        font-size: 35px;
+    }
+    .add-list-box h3{
+        display: none;
+    }
+    i{
+        font-size: 30px;  
+    }
+    .card-cointainer{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .card{
+        height: auto;
+        margin: 10px 0px;
+        width: 95%;
+        padding: 5px 0px;
+    }
+    .card-heading{
+        margin-left: 15px;
+        font-size: 18px;
+        border: none;
+    }
+    .completed-task{
+        display: none;
+    }
+    .check{
+        display: none;
+    }
+
+/*addlistview styling starts*/
+
+.popup{
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    padding: 10px 10px;
+    width: 250px; 
+    
+}
+.pu{
+    margin:10px 0px;
+}
+.popup-heading{
+    font-size: 15px;
+}
+.popup-input{
+    width:180px;
+    height: 30px; 
+}
+.popup-button button{
+    padding: 5px 15px;
+    font-size: 15px;
+    width: 70px;
+}
+}
