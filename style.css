@@ -98,14 +98,14 @@ i{
 .popup{
     background-color: white;
     position:absolute;
-    top: 30%;
+    top: 20%;
     left: 35%;
     border: 1px solid #e74c3c;
     border-radius: 10px;
     box-shadow: 8px 8px 8px darkgrey;
     padding: 10px 10px;
     text-align: center;
-    width: 400px; 
+    width: 30%; 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -120,7 +120,7 @@ i{
 }
 .popup-input{
   box-sizing: border-box;
-  width:300px;
+  width:250px;
   height: 35px;
   border: 1px solid #e74c3c;
   border-radius: 5px;
@@ -180,12 +180,10 @@ i{
 /*addlistview styling starts*/
 
 .popup{
-    position:absolute;
     top: 40%;
-    left: 5%;
+    left: 13%;
     padding: 10px 10px;
-    width: 250px; 
-    
+    width: 70%; 
 }
 .pu{
     margin:10px 0px;

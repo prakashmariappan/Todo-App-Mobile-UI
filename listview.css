@@ -25,17 +25,30 @@ i{
 .list-container{
     margin: 0px 300px;
 }
-
-.listview{
+.hrbox{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+   width: 180px;
+   height: 1px;
+   background-color: grey;
+   opacity: 0.8;
+}
+.listview{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 0px;
+    margin: 10px 0px 40px 0px;
 }
 .listview h1{
     font-weight: bold;
     font-size: 65px;
+    width: 400px;
+    text-align: center;
 }
 
 .list-content{
@@ -93,6 +106,9 @@ i{
     font-size: 24px;
     font-weight: normal;
 }
+.addtodo{
+    filter: blur(8px);
+}
 /*popup*/
 .popup{
     background-color: white;
@@ -140,9 +156,7 @@ i{
  color: white;
 }
 
-.addtodo{
-    filter: blur(8px);
-}
+
 
 
 @media screen  and (max-width: 480px){
@@ -160,21 +174,24 @@ i{
         margin-top: 20px;
         margin-bottom: 0px;
     }
-    .listview h1{
-        margin-left: 7%;
+    hr{
+        display: none;
+    }
+    .listview .hrbox h1{
         font-size: 30px;
-       
+       text-align: left;
+       margin-left: 10%;
+       width: 200px;
     }
     .back{
         display: none;
 }
 .list-content{
-    margin: 40px 20px;
+    margin: 40px 10px;
 }
 .card{
-    position: relative;
-    margin: 0px 0px;
-    width: 95%;
+    position: relative; 
+    width: 75%;
     padding: 40px 0px 5px 40px;
 }
 .card-heading{
@@ -210,12 +227,10 @@ i{
 /*addtodo styling starts*/
 
 .popup{
-    position:absolute;
     top: 40%;
-    left: 5%;
+    left: 13%;
     padding: 10px 10px;
-    width: 250px; 
-    
+    width: 70%; 
 }
 .pu{
     margin:10px 0px;
